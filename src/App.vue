@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <h1>Hello world</h1>
+    <!-- <h1>Hello world</h1> -->
     <hello-world />
-    <instagram-login />
     <img :src="image"/>
+    <instagram-login />
+    
   </div>
 </template>
 
@@ -19,13 +20,13 @@
         }
     }*/
 
-  import helloWorld from "./components/HelloWorld";
+  //import helloWorld from "./components/HelloWorld";
   import instagramLogin from "./components/instagramLogin";
   import image from "./image.jpg"
   export default {
     name: 'App',
     components: {
-       helloWorld,
+      /* helloWorld,*/
       instagramLogin
     },
     data: function(){
@@ -38,7 +39,9 @@
 
 <style>
 #app {
-  display: grid;
+  /*display: inline-grid;*/
+  /*grid-template-columns: [first] 1fr [img] 1fr [login] 1fr [last] 1fr;*/
+  
   /*background-color: black;*/
   /*font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
