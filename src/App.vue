@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <!-- <h1>Hello world</h1> -->
-    <hello-world />
-    <img :src="image"/>
-    <instagram-login />
+    <div id="main">
+      <img :src="image"/>
+      <instagram-login />
+    </div>
+    <instagram-footer />
     
   </div>
 </template>
@@ -22,11 +23,13 @@
 
   //import helloWorld from "./components/HelloWorld";
   import instagramLogin from "./components/instagramLogin";
+  import instagramFooter from "./components/instagramFooter";
   import image from "./image.jpg"
   export default {
     name: 'App',
     components: {
       /* helloWorld,*/
+      instagramFooter,
       instagramLogin
     },
     data: function(){
@@ -38,20 +41,19 @@
 </script>
 
 <style>
-#app {
-  /*display: inline-grid;*/
-  /*grid-template-columns: [first] 1fr [img] 1fr [login] 1fr [last] 1fr;*/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  #main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    /*grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;*/
+
+  }
+
+  body{
+    background-color: #FAFAFA;
+  }
+
   
-  /*background-color: black;*/
-  /*font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;*/
-  
-}
-body{
-  background-color: #FAFAFA;
-}
 </style>
