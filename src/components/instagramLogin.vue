@@ -59,9 +59,11 @@
     }
     #title {
         font-family: 'Grand Hotel', cursive;
-        font-size: 55px;
+        font-size: 53px;
         text-align: center;
         font-weight: 200;
+        padding: 15px 0;
+        margin-bottom: 10px;
     }
 
     input {
@@ -107,7 +109,7 @@
         font-family: "Roboto", sans-serif;
         font-size: 13.8px;
         letter-spacing: 0.5px;
-        padding: 8px 0;
+        padding: 22px 0;
     }
 
     #sign-up a{
@@ -126,6 +128,7 @@
         font-size: 12px;
         font-weight: bold;
         color: #9B8E8E;
+        padding: 20px 0;
     }
 
     #facebookLogin {
@@ -155,7 +158,7 @@
         width: 280px;
         font-size: 12px;
         margin: auto;
-        padding: 30px 0 30px 0;
+        padding: 30px 0 20px 0;
         line-height: 1.5;
         color: #9B8E8E;
         text-align: center;
