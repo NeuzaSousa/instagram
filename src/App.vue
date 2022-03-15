@@ -10,18 +10,6 @@
 </template>
 
 <script>
-
-    /*import image from "./assets/logo.png"
-    
-    export default {
-        data: function () {
-            return {
-                image: image
-            }
-        }
-    }*/
-
-  //import helloWorld from "./components/HelloWorld";
   import instagramLogin from "./components/instagramLogin";
   import instagramFooter from "./components/instagramFooter";
   import image from "./image.jpg"
@@ -54,11 +42,8 @@
 
   #main {
     display: flex;
-    /*grid-template-columns: 1fr 1fr;*/
     margin-top: 50px;
     justify-content: center;
-    /*grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;*/
-
   }
 
   #phone {
@@ -66,6 +51,34 @@
     height: auto;
     padding-right: 30px;
   }
+
+  @media screen and (max-width: 875px) {
+    #phone {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    #login {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: none;
+      border: none;
+      background-color: #FAFAFA;
+    }
+
+    #sign-up {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border: none;
+      background-color: #FAFAFA;
+    }
+  }
+
+  
 
 
 

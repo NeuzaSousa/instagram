@@ -49,7 +49,7 @@
     };
 </script>
 
-<style scoped>
+<style>
     @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
     #login {
         background-color: white;
