@@ -21,6 +21,6 @@
 
 - The animation to the left is not working
 
-- The login is not working
+- The login is not working (I said in one of the git commits it is kind of working but what I meant was it was doing something)
 
 ### I had a lot of fun doing this project, I hope you like it
