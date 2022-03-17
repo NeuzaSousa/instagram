@@ -4,7 +4,7 @@
             <h1 id="title">Instagram</h1>
             <input type="text" call="input" v-model="username" placeholder="Phone number, username, or email" />
             <input type="password" call="input" v-model="password" placeholder="Password" />
-            <button @click="login" id="loginButton">Log In</button>
+            <button :disabled="(!username.length || password.length<5)" id="loginButton" @click="login">Log In</button> 
             <p id="or"><span id="hr">&#10240; &#10240; &#10240; &#10240; &#10240; &#10240; &#10240; &#10240; &#10240; &#10240;</span>&#10240;&#10240;OR&#10240;&#10240;<span id="hr">&#10240; &#10240; &#10240; &#10240; &#10240; &#10240; &#10240; &#10240; &#10240; &#10240;</span></p>
             <p><img :src="facebook" id="facebookImg"><a id="facebookLogin" href="https://www.instagram.com/fxcal/disclosure/?next=%2F">Log in with Facebook</a></p>
             <a id="forgotPassword" href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
@@ -32,18 +32,18 @@
                 facebook: facebook,
                 apple: apple,
                 play: play,
+                active: true,
             };
         },
 
         methods:{
             login(username, password) {
-                if(username && password) {
-                    console.log("Login done");
-                } else {
-                    console.log("Insert username and password")
+                if(username !== null && password !== null) {
+                    alert("Login done");
+                } else {console.log("username:", this.username, "password:", this.password);
+                    alert("Sorry, your password was incorrect. Please double-check your password.")
                 }
             },
-
 
         }
     };
@@ -82,10 +82,17 @@
         padding: 7px;
         margin-top: 10px;
         border: none;
-        background-color: #0095F6;
         color: white;
         font-weight: bold; 
         border-radius: 5px;
+        background-color: #0095F6;
+    }
+
+    #loginButton:disabled {
+        cursor: not-allowed;
+        border: none;
+        background-color: #B2DFFC;
+        color: white;
     }
 
     ::placeholder {
