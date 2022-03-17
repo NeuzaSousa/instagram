@@ -31,18 +31,13 @@
                 password: "",
                 facebook: facebook,
                 apple: apple,
-                play: play,
-                active: true,
+                play: play
             };
         },
 
         methods:{
-            login(username, password) {
-                if(username !== null && password !== null) {
-                    alert("Login done");
-                } else {console.log("username:", this.username, "password:", this.password);
-                    alert("Sorry, your password was incorrect. Please double-check your password.")
-                }
+            login() {
+                alert("Login done")
             },
 
         }

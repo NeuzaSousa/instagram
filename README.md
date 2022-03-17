@@ -9,10 +9,8 @@
 
 ---
 ![instagram](instagram.jpg)
-
 ## Reality
 
----
 ![project](project_instagram.jpg)
 
 ## Please keep in mind that
