@@ -4,11 +4,10 @@
 
 ### It was a very fun project to do
 
----
 ## Expectation
 
----
 ![instagram](instagram.jpg)
+
 ## Reality
 
 ![project](project_instagram.jpg)
